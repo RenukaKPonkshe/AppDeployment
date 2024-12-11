@@ -16,3 +16,8 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
+
+
+app.listen(3000, '0.0.0.0', () => {
+  console.log('Node.js app is running on port 3000');
+});
